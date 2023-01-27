@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="uname" name="uname" id="uname" onblur="username(this, 'error1')"><span id="error1"></span><br><br><br>
+    <input type="upass" name="upass" id="upass" onblur="password(this, 'error2')"><span id="error2"></span><br><br><br>
+    <input type="uemail" name="uemail" id="uemail" onblur="email(this, 'error3')"><span id="error3"></span><br><br><br>
+    <input type="umobile" name="umobile" id="umobile" onblur="mobile(this, 'error4')"><span id="error4"></span><br><br><br>
+    <button value="anything" onclick="clicksub()">Submit</button>
+
+</body>
+</html>
+
+<script>
+
+     function username(e,error1){
+            if(e.value == ""){
+                document.getElementById(error1).innerText = "*user name required"
+            }
+            else{
+                document.getElementById(error1).innerText = "*user name required"
+
+            }
+            // console.log(e);
+        }
+         function password(e,error2){
+            if(e.value == ""){
+                document.getElementById(error2).innerText = "*user password required"
+            }
+            else{
+                document.getElementById(error2).innerText = "*user password required"
+
+            }
+            // console.log(e);
+        }
+         function email(e,error3){
+            if(e.value == ""){
+                document.getElementById(error3).innerText = "*user email required"
+            }
+            else{
+                document.getElementById(error3).innerText = "*user email required"
+
+            }
+            // console.log(e);
+        }
+         function mobile(e,error4){
+            if(e.value == ""){
+                document.getElementById(error4).innerText = "*user mo-number required"
+            }
+            else{
+                document.getElementById(error4).innerText = "*user mo-number required"
+
+            }
+            // console.log(e);
+        }
+
+</script>
